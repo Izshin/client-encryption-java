@@ -10,7 +10,7 @@ import okhttp3.Response;
 /**
  * An OkHttp3 JWE interceptor for encrypting/decrypting parts of HTTP payloads.
  */
-public class OkHttpJweInterceptor extends OkHttpEncryptionInterceptor {
+public class OkHttp3JweInterceptor extends OkHttpEncryptionInterceptor {
 
     private final JweConfig config;
 
