@@ -8,7 +8,7 @@ import okhttp3.Response;
  * An OkHttp3 interceptor for encrypting/decrypting parts of HTTP payloads.
  * See: https://github.com/square/okhttp/wiki/Interceptors
  */
-public class OkHttpFieldLevelEncryptionInterceptor extends OkHttpEncryptionInterceptor {
+public class OkHttp3FieldLevelEncryptionInterceptor extends OkHttpEncryptionInterceptor {
 
     private final FieldLevelEncryptionConfig config;
 
