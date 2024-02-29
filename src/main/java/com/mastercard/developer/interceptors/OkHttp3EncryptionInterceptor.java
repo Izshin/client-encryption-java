@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import static com.mastercard.developer.utils.StringUtils.isNullOrEmpty;
 
-public abstract class OkHttpEncryptionInterceptor implements Interceptor {
+public abstract class OkHttp3EncryptionInterceptor implements Interceptor {
 
     public static OkHttpEncryptionInterceptor from(EncryptionConfig config) {
         return config.getScheme().equals(EncryptionConfig.Scheme.JWE) ? new OkHttpJweInterceptor(config) : new OkHttpFieldLevelEncryptionInterceptor(config);
